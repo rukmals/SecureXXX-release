@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layoutDescription="@xml/scene_01"
+    android:background="@drawable/loginbackground"
+    tools:showPaths="true">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:text="spin color wheel to the correct fruits and select. \n Then you can unlock"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinleftbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/fruitpickupbutton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/pickfruitbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/biobutton"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bioauthbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/fruitpickupbutton"
+        app:layout_constraintEnd_toStartOf="@+id/fruitpickupbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fruitpickupbutton" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/gotopinbutton"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:background="@drawable/gotopinbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/fruitpickupbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fruitpickupbutton"
+        app:layout_constraintTop_toTopOf="@+id/fruitpickupbutton" />
+
+    <Button
+        android:id="@+id/spinleftbutton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/leftspinbuttton"
+        app:layout_constraintBottom_toTopOf="@+id/fruitpickupbutton"
+        app:layout_constraintEnd_toEndOf="@+id/fruitpickupbutton"
+        app:layout_constraintStart_toStartOf="@+id/biobutton" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/spinrightbutton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rightspinbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/spinleftbutton"
+        app:layout_constraintEnd_toEndOf="@+id/gotopinbutton"
+        app:layout_constraintStart_toStartOf="@+id/fruitpickupbutton"
+        app:layout_constraintTop_toTopOf="@+id/spinleftbutton" />
+
+    <ImageView
+        android:id="@+id/colorspin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:src="@drawable/colorfour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fruitspin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:src="@drawable/fruitfour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/forgetbutton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/toppng_com_question_marks_png_512x512"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

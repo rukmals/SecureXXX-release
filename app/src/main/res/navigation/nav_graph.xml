@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registrationPhaseOneFragment">
+
+    <fragment
+        android:id="@+id/registrationPhaseFiveFragment"
+        android:name="com.example.securex.registration.RegistrationPhaseFiveFragment"
+        android:label="fragment_registration_phase_five"
+        tools:layout="@layout/fragment_registration_phase_five" >
+        <action
+            android:id="@+id/action_registrationPhaseFiveFragment_to_registrationPhaseSixFragment"
+            app:destination="@id/registrationPhaseSixFragment" />
+        <action
+            android:id="@+id/action_registrationPhaseFiveFragment_to_registrationPhaseFourFragment"
+            app:destination="@id/registrationPhaseFourFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationPhaseFourFragment"
+        android:name="com.example.securex.registration.RegistrationPhaseFourFragment"
+        android:label="fragment_registration_phase_four"
+        tools:layout="@layout/fragment_registration_phase_four" >
+        <action
+            android:id="@+id/action_registrationPhaseFourFragment_to_registrationPhaseFiveFragment"
+            app:destination="@id/registrationPhaseFiveFragment" />
+        <action
+            android:id="@+id/action_registrationPhaseFourFragment_to_registrationPhaseThreeFragment"
+            app:destination="@id/registrationPhaseThreeFragment" />
+        <action
+            android:id="@+id/action_registrationPhaseFourFragment_to_loginIntroFragment"
+            app:destination="@id/loginIntroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationPhaseOneFragment"
+        android:name="com.example.securex.registration.RegistrationPhaseOneFragment"
+        android:label="fragment_registration_phase_one"
+        tools:layout="@layout/fragment_registration_phase_one" >
+        <action
+            android:id="@+id/action_registrationPhaseOneFragment_to_registrationPhaseTwoFragment"
+            app:destination="@id/registrationPhaseTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationPhaseSixFragment"
+        android:name="com.example.securex.registration.RegistrationPhaseSixFragment"
+        android:label="fragment_registration_phase_six"
+        tools:layout="@layout/fragment_registration_phase_six" >
+        <action
+            android:id="@+id/action_registrationPhaseSixFragment_to_registrationPhaseFiveFragment"
+            app:destination="@id/registrationPhaseFiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationPhaseThreeFragment"
+        android:name="com.example.securex.registration.RegistrationPhaseThreeFragment"
+        android:label="fragment_registration_phase_three"
+        tools:layout="@layout/fragment_registration_phase_three" >
+        <action
+            android:id="@+id/action_registrationPhaseThreeFragment_to_registrationPhaseFourFragment"
+            app:destination="@id/registrationPhaseFourFragment" />
+        <action
+            android:id="@+id/action_registrationPhaseThreeFragment_to_registrationPhaseTwoFragment"
+            app:destination="@id/registrationPhaseTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationPhaseTwoFragment"
+        android:name="com.example.securex.registration.RegistrationPhaseTwoFragment"
+        android:label="fragment_registration_phase_two"
+        tools:layout="@layout/fragment_registration_phase_two" >
+        <action
+            android:id="@+id/action_registrationPhaseTwoFragment_to_registrationPhaseThreeFragment"
+            app:destination="@id/registrationPhaseThreeFragment" />
+        <action
+            android:id="@+id/action_registrationPhaseTwoFragment_to_registrationPhaseOneFragment"
+            app:destination="@id/registrationPhaseOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginIntroFragment"
+        android:name="com.example.securex.registration.LoginIntroFragment"
+        android:label="LoginIntroFragment" >
+        <action
+            android:id="@+id/action_loginIntroFragment_to_registrationPhaseFiveFragment"
+            app:destination="@id/registrationPhaseFiveFragment" />
+    </fragment>
+</navigation>

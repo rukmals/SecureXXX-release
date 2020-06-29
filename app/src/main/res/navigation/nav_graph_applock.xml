@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_applock"
+    app:startDestination="@id/applistFragment">
+
+    <fragment
+        android:id="@+id/applistFragment"
+        android:name="com.example.securex.applock.ApplistFragment"
+        android:label="fragment_applist"
+        tools:layout="@layout/fragment_applist" />
+</navigation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/intro_nav"
+    app:startDestination="@id/graphicalIntroFragment">
+
+    <fragment
+        android:id="@+id/encryptorIntroFragment"
+        android:name="com.example.securex.about.EncryptorIntroFragment"
+        android:label="EncryptorIntroFragment" >
+        <action
+            android:id="@+id/action_encryptorIntroFragment_to_securityIntroFragment"
+            app:destination="@id/securityIntroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/securityIntroFragment"
+        android:name="com.example.securex.about.SecurityIntroFragment"
+        android:label="SecurityIntroFragment" >
+        <action
+            android:id="@+id/action_securityIntroFragment_to_appLockIntroFragment"
+            app:destination="@id/appLockIntroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/graphicalIntroFragment"
+        android:name="com.example.securex.about.GraphicalIntroFragment"
+        android:label="GraphicalIntroFragment" >
+        <action
+            android:id="@+id/action_graphicalIntroFragment_to_encryptorIntroFragment"
+            app:destination="@id/encryptorIntroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appLockIntroFragment"
+        android:name="com.example.securex.about.AppLockIntroFragment"
+        android:label="AppLockIntroFragment" />
+</navigation>
